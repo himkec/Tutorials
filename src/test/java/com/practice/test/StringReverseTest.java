@@ -7,8 +7,6 @@ import com.practice.StringReverse;
 
 public class StringReverseTest {
   
-  private final StringReverse str = new StringReverse();
-  
   @ParameterizedTest
   @ValueSource(strings = { "racecar", 
                            "radar", 
@@ -18,7 +16,7 @@ public class StringReverseTest {
                            })
   public void stringReverseTest(String input) {
     StringBuilder out=new StringBuilder(input);
-    assertEquals(str.reverseString(input),out.reverse().toString());
+    assertEquals(StringReverse.reverseString(input),out.reverse().toString());
   }
 
 }

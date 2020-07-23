@@ -7,15 +7,13 @@ import com.practice.IntReverse;
 
 public class IntReverseTest {
   
-  private final IntReverse str = new IntReverse();
-  
  @Test
   public void intReverseTest() {
-    assertEquals(1,str.reverseInt(10));
-    assertEquals(1,str.reverseInt(100));
-    assertEquals(54321,str.reverseInt(12345));
-    assertEquals(5,str.reverseInt(5)); 
-    assertEquals(-5,str.reverseInt(-5)); 
-    assertEquals(-12345,str.reverseInt(-54321)); 
+    assertEquals(1,IntReverse.reverseInt(10));
+    assertEquals(1,IntReverse.reverseInt(100));
+    assertEquals(54321,IntReverse.reverseInt(12345));
+    assertEquals(5,IntReverse.reverseInt(5)); 
+    assertEquals(-5,IntReverse.reverseInt(-5)); 
+    assertEquals(-12345,IntReverse.reverseInt(-54321)); 
   }
 }

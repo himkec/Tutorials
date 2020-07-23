@@ -5,11 +5,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.practice.Palindrome;
-import com.practice.StringReverse;
-
 public class PalindromeTest {
-  
-  private final Palindrome plr = new Palindrome();
   
   @ParameterizedTest
   @ValueSource(strings = { "Hi!", 
@@ -17,7 +13,7 @@ public class PalindromeTest {
                            "asas",
                            })
   public void palindromeNegativeTest(String input) {
-    assertFalse(plr.isPalindrome(input));
+    assertFalse(Palindrome.isPalindrome(input));
   }
   
   @ParameterizedTest
@@ -27,7 +23,6 @@ public class PalindromeTest {
                            ""
                            })
   public void palindromePositiveTest(String input) {
-    assertTrue(plr.isPalindrome(input));
+    assertTrue(Palindrome.isPalindrome(input));
   }
-
 }

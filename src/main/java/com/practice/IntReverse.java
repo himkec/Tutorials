@@ -2,7 +2,7 @@ package com.practice;
 
 public class IntReverse {
   
-  public int reverseInt(int input) {
+  public static int reverseInt(int input) {
     int reverse = 0;
     if(input >= -9 && input <= 9) {
       return input;

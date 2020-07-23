@@ -2,7 +2,7 @@ package com.practice;
 
 public class StringReverse {
   
-  public String reverseString(String input) {
+  public static String reverseString(String input) {
     if(input.length() == 1) {
       return input;
     }

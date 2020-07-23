@@ -3,7 +3,7 @@ package com.practice;
 
 public class Palindrome {
 
-  public Boolean isPalindrome(String input) {
+  public static Boolean isPalindrome(String input) {
     if (input.length() <= 1)
       return true;
     String output = "";
